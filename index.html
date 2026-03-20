@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ajman University — GHG Sustainability Dashboard 2021–2025</title><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"><style>:root{--bg:#f4f7f5;--surface:#ffffff;--surface2:#eaf0ec;--border:rgba(0,0,0,0.09);--text:#1a2b22;--muted:#5e7568;--green:#34a853;--amber:#d85604;--red:#ea4335;--blue:#00a1ff;--purple:#ffbb00;--ggreen:rgba(52,168,83,0.12);--gamber:rgba(216,86,4,0.12);--gred:rgba(234,67,53,0.12);--gblue:rgba(0,161,255,0.12)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 70% 50% at 5% 0%,rgba(52,168,83,0.06),transparent 60%),radial-gradient(ellipse 50% 40% at 95% 100%,rgba(0,161,255,0.04),transparent 60%);pointer-events:none;z-index:0}body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,0,0,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,0.04) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}.page{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:32px 40px 60px}header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--border)}.header-left{display:flex;flex-direction:column;gap:8px}.badge{display:inline-flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);background:var(--ggreen);border:1px solid rgba(52,168,83,.3);padding:5px 12px;border-radius:3px;width:fit-content}.badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.85)}}h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(22px,3vw,36px);letter-spacing:-.02em;line-height:1.1;color:#1a2b22}h1 span{color:var(--green)}.subtitle{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:.06em}.header-right{display:flex;flex-direction:column;align-items:flex-end;gap:5px}.org-tag{font-family:'Syne',sans-serif;font-weight:700;font-size:13px;color:var(--amber);letter-spacing:.08em;text-transform:uppercase}.prep-tag{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}.year-bar{display:flex;align-items:center;gap:16px;margin-bottom:24px;flex-wrap:wrap}.year-bar-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.year-tabs{display:flex;gap:3px;background:rgba(0,0,0,0.04);border:1px solid var(--border);border-radius:10px;padding:4px}.year-tab{font-family:'DM Mono',monospace;font-size:12px;padding:8px 20px;border-radius:7px;border:none;background:transparent;color:var(--muted);cursor:pointer;transition:all .18s;position:relative;white-space:nowrap}.year-tab:hover:not(.active){color:var(--text)}.year-tab.active{background:var(--surface2);color:var(--text);border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.1)}.year-tab.base-tab::before{content:'BASE';position:absolute;top:-8px;left:50%;transform:translateX(-50%);font-size:7px;letter-spacing:.1em;color:var(--amber);background:var(--bg);padding:0 3px;border-radius:2px}#yearStatusBadge{font-family:'DM Mono',monospace;font-size:10px;padding:5px 12px;border-radius:3px;letter-spacing:.08em}.section-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:13px;display:flex;align-items:center;gap:10px}.section-label::after{content:'';flex:1;height:1px;background:var(--border)}.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:22px}.kpi-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;position:relative;overflow:hidden;transition:transform .2s}.kpi-card:hover{transform:translateY(-2px)}.kpi-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;border-radius:12px 12px 0 0}.kpi-card.c-amber::before{background:linear-gradient(90deg,var(--amber),transparent)}.kpi-card.c-green::before{background:linear-gradient(90deg,var(--green),transparent)}.kpi-card.c-blue::before{background:linear-gradient(90deg,var(--blue),transparent)}.kpi-card.c-red::before{background:linear-gradient(90deg,var(--red),transparent)}.kpi-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}.kpi-value{font-family:'Syne',sans-serif;font-size:clamp(20px,2.2vw,30px);font-weight:800;letter-spacing:-.02em;line-height:1;margin-bottom:8px}.kpi-unit{font-family:'DM Mono',monospace;font-size:11px;font-weight:400;color:var(--muted);margin-left:3px}.kpi-delta{display:inline-flex;align-items:center;gap:4px;font-family:'DM Mono',monospace;font-size:11px;padding:3px 8px;border-radius:4px}.d-up{background:var(--gred);color:var(--red)}.d-dn{background:var(--ggreen);color:var(--green)}.d-fl{background:var(--gamber);color:var(--amber)}.d-base{background:rgba(0,0,0,0.06);color:var(--muted)}.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;position:relative;overflow:hidden}.card-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;margin-bottom:3px;color:#1a2b22}.card-sub{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.07em;margin-bottom:20px}.main-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-bottom:16px}.bottom-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px}.wide-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}.elec-path-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:16px;margin-bottom:16px}.bar-chart{display:flex;flex-direction:column;gap:12px}.bar-row{display:flex;flex-direction:column;gap:5px}.bar-meta{display:flex;justify-content:space-between;align-items:baseline}.bar-year-lbl{font-family:'DM Mono',monospace;font-size:11px}.bar-total-lbl{font-family:'Syne',sans-serif;font-size:12px;font-weight:700}.bar-track{height:24px;background:rgba(0,0,0,0.06);border-radius:4px;display:flex;overflow:hidden}.seg-s1{background:var(--green);height:100%;transition:width .8s cubic-bezier(.4,0,.2,1)}.seg-s2{background:var(--blue);height:100%;transition:width .8s cubic-bezier(.4,0,.2,1)}.seg-s3{background:var(--amber);opacity:.9;height:100%;transition:width .8s cubic-bezier(.4,0,.2,1)}.bar-hl{outline:2px solid rgba(216,86,4,0.5);outline-offset:-1px;border-radius:4px}.bar-legend{display:flex;gap:14px;margin-top:10px}.legend-item{display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}.legend-dot{width:8px;height:8px;border-radius:2px}.donut-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}.donut-container{position:relative;width:160px;height:160px;overflow:visible}.donut-svg{width:160px;height:160px;transform:rotate(-90deg);overflow:visible}.donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}.donut-cv{font-family:'Syne',sans-serif;font-weight:800;font-size:18px;letter-spacing:-.02em;line-height:1;color:var(--amber)}.donut-cl{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:3px}.donut-list{width:100%;display:flex;flex-direction:column;gap:6px}.donut-item{display:flex;align-items:center;justify-content:space-between;gap:7px}.donut-left{display:flex;align-items:center;gap:7px;flex:1;min-width:0}.donut-bar-bg{flex:1;height:3px;background:rgba(0,0,0,0.07);border-radius:2px;overflow:hidden}.donut-bar-fill{height:100%;border-radius:2px}.donut-name{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95px}.donut-pct{font-family:'DM Mono',monospace;font-size:11px;color:var(--text);min-width:34px;text-align:right}.sbti-list{display:flex;flex-direction:column;gap:9px}.sbti-row{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:11px 13px;display:flex;align-items:center;justify-content:space-between;gap:10px}.sbti-lbl{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text);min-width:65px}.sbti-bar-bg{flex:1;height:5px;background:rgba(0,0,0,0.07);border-radius:3px;overflow:hidden}.sbti-bar-fill{height:100%;border-radius:3px;transition:width 1s cubic-bezier(.4,0,.2,1)}.sbti-status{font-family:'DM Mono',monospace;font-size:10px;padding:3px 7px;border-radius:4px;min-width:80px;text-align:center}.s-good{background:var(--ggreen);color:var(--green)}.s-warn{background:var(--gamber);color:var(--amber)}.s-crit{background:var(--gred);color:var(--red)}.s-base{background:rgba(0,0,0,0.06);color:var(--muted)}.src-list{display:flex;flex-direction:column;gap:9px}.src-item{display:flex;align-items:center;gap:10px}.src-name{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);min-width:115px}.src-track{flex:1;height:5px;background:rgba(0,0,0,0.07);border-radius:2px;overflow:hidden}.src-fill{height:100%;border-radius:2px;transition:width 1s cubic-bezier(.4,0,.2,1)}.src-val{font-family:'DM Mono',monospace;font-size:10px;min-width:58px;text-align:right}.commute-kpis{display:flex;gap:9px;margin-bottom:13px}.commute-kpi{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px}.commute-kpi-label{font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}.commute-kpi-val{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;letter-spacing:-.02em}.commute-kpi-sub{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}.s3-list{display:flex;flex-direction:column;gap:8px}.s3-row{display:flex;align-items:center;gap:9px}.s3-lbl{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);min-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.s3-track{flex:1;height:7px;background:rgba(0,0,0,0.07);border-radius:4px;overflow:hidden}.s3-fill{height:100%;border-radius:4px;transition:width 1.1s cubic-bezier(.4,0,.2,1)}.s3-val{font-family:'DM Mono',monospace;font-size:10px;color:var(--text);min-width:65px;text-align:right}.bld-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.bld-cell{border-radius:6px;padding:8px 7px;display:flex;flex-direction:column;gap:3px;transition:transform .15s;cursor:default}.bld-cell:hover{transform:scale(1.04)}.bld-name{font-family:'DM Mono',monospace;font-size:9px;color:rgba(0,0,0,0.5);letter-spacing:.05em}.bld-val{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:#1a2b22}.bld-delta{font-family:'DM Mono',monospace;font-size:9px}.elec-table{width:100%;border-collapse:collapse}.elec-table th{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:6px 10px;text-align:left;border-bottom:1px solid var(--border)}.elec-table td{font-family:'DM Mono',monospace;font-size:11px;padding:9px 10px;border-bottom:1px solid rgba(0,0,0,0.05);color:var(--muted)}.elec-table tr.elec-active td{background:rgba(0,161,255,0.09);color:var(--text)}.pathway-chart{height:175px}.pathway-svg{width:100%;height:100%}.tt{position:fixed;background:#ffffff;border:1px solid rgba(0,0,0,0.15);padding:6px 10px;border-radius:6px;font-family:'DM Mono',monospace;font-size:10px;color:#1a2b22;pointer-events:none;z-index:999;opacity:0;transition:opacity .12s;white-space:pre;box-shadow:0 4px 12px rgba(0,0,0,.1)}.rec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-bottom:16px}@keyframes flashIn{from{opacity:.6}to{opacity:1}}.flash{animation:flashIn .28s ease}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}.fade-in{opacity:0;transform:translateY(10px);animation:fadeUp .45s forwards}.fade-in:nth-child(1){animation-delay:.04s}.fade-in:nth-child(2){animation-delay:.09s}.fade-in:nth-child(3){animation-delay:.14s}.fade-in:nth-child(4){animation-delay:.19s}footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}.footer-left{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}.footer-right{display:flex;gap:16px}.ftag{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);display:flex;align-items:center;gap:6px}.ftag span{width:8px;height:8px;border-radius:2px;display:inline-block}@media(max-width:1100px){.kpi-grid{grid-template-columns:repeat(2,1fr)}.main-grid,.elec-path-grid{grid-template-columns:1fr}.bottom-grid{grid-template-columns:1fr 1fr}.wide-grid{grid-template-columns:1fr}}@media(max-width:680px){.page{padding:16px 14px 36px}.kpi-grid{grid-template-columns:1fr 1fr}.bottom-grid,.rec-grid{grid-template-columns:1fr}.year-tab{padding:7px 12px;font-size:11px}header{flex-direction:column;gap:12px}.header-right{align-items:flex-start}}</style></head><body><div class="tt" id="tt"></div><div class="page"><header><div class="header-left"><div class="badge">GHG Inventory Report · 4-Year Dataset 2021–2025</div><h1>GHG Emissions <span>Dashboard</span></h1><div class="subtitle">AJMAN UNIVERSITY · PREPARED BY AXOSOMATIC (FZC) · BASELINE YEAR 2021–2022</div></div><div class="header-right"><div class="org-tag">Ajman University</div><div class="prep-tag">Prepared and Powered by Axosomatic · www.axosomatic.com</div><div class="prep-tag">Sharjah Research &amp; Technology Park, UAE</div><div class="prep-tag" style="margin-top:5px;color:var(--amber);">UAE Net Zero 2050 · UN SDGs 7 &amp; 13</div></div></header><div class="year-bar"><span class="year-bar-label">Select Year:</span><div class="year-tabs" id="yearTabs"><button class="year-tab base-tab" data-y="0">2021–22</button><button class="year-tab" data-y="1">2022–23</button><button class="year-tab" data-y="2">2023–24</button><button class="year-tab active" data-y="3">2024–25</button></div><span id="yearStatusBadge"></span></div><div class="section-label" id="kpiLabel">Key Performance Indicators</div><div class="kpi-grid" id="kpiGrid"></div><div class="main-grid"><div class="card"><div class="card-title">Year-on-Year Emissions Trend</div><div class="card-sub">ALL SCOPES — tCO₂e · SELECTED YEAR HIGHLIGHTED</div><div class="bar-chart" id="barChart"></div><div class="bar-legend"><div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div>Scope 1</div><div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div>Scope 2</div><div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>Scope 3</div></div></div><div class="card"><div class="card-title">Scope 3 Breakdown</div><div class="card-sub" id="donutSub"></div><div class="donut-wrap"><div class="donut-container"><svg class="donut-svg" viewBox="0 0 100 100" id="donutSvg"></svg><div class="donut-center"><div class="donut-cv" id="donutV"></div><div class="donut-cl" id="donutCatLabel">tCO₂e</div></div></div><div class="donut-list" id="donutList"></div></div></div></div><div class="bottom-grid"><div class="card"><div class="card-title">SBTi Target Status</div><div class="card-sub" id="sbtiSub"></div><div class="sbti-list" id="sbtiList"></div></div><div class="card"><div class="card-title">Scope 1 — Emission Sources</div><div class="card-sub" id="s1Sub"></div><div class="src-list" id="s1Src"></div></div><div class="card"><div class="card-title">Employee &amp; Student Commuting</div><div class="card-sub" id="commSub"></div><div class="commute-kpis" id="commKpis"></div><div class="src-list" id="commChart"></div></div></div><div class="wide-grid"><div class="card"><div class="card-title">Scope 3 Category Detail</div><div class="card-sub" id="s3Sub"></div><div class="s3-list" id="s3List"></div></div><div class="card"><div class="card-title">Scope 2 — Building Emissions</div><div class="card-sub" id="bldSub"></div><div class="bld-grid" id="bldGrid"></div></div></div><div class="elec-path-grid"><div class="card"><div class="card-title">Scope 2 — Electricity Consumption</div><div class="card-sub">ALL YEARS · SELECTED HIGHLIGHTED</div><table class="elec-table"><thead><tr><th>Year</th><th>Electricity (MWh)</th><th>GHG (tCO₂e)</th><th>Δ vs Baseline</th></tr></thead><tbody id="elecBody"></tbody></table></div><div class="card"><div class="card-title">SBTi Net Zero Pathway — Scope 1 + Scope 2</div><div class="card-sub">AU ACTUAL vs. SBTi TARGET · 2021–2030 PROJECTION</div><div class="pathway-chart"><svg class="pathway-svg" id="pathSvg" viewBox="0 0 860 175" preserveAspectRatio="none"></svg></div><div style="display:flex;gap:16px;margin-top:9px;"><div class="legend-item"><svg width="20" height="8"><line x1="0" y1="4" x2="20" y2="4" stroke="#00a1ff" stroke-width="2" stroke-dasharray="5,3"/></svg><span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">SBTi Target</span></div><div class="legend-item"><svg width="20" height="8"><line x1="0" y1="4" x2="20" y2="4" stroke="#d85604" stroke-width="2.5"/></svg><span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">AU Actual</span></div></div></div></div><div class="section-label">Axosomatic Recommendations</div><div class="rec-grid" id="recGrid"></div><footer><div class="footer-left">© 2026 Axosomatic · Prepared and Powered by Axosomatic · Confidential — For Ajman University Use Only · www.axosomatic.com</div><div class="footer-right"><div class="ftag"><span style="background:var(--green)"></span>Scope 1 target met</div><div class="ftag"><span style="background:var(--red)"></span>Scope 2 critical gap</div><div class="ftag"><span style="background:var(--amber)"></span>Scope 3 action needed</div></div></footer></div><script>const _a    = ['2021–22','2022–23','2023–24','2024–25'];
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Axosomatic NetZero Carbon Intelligence™ — GHG Sustainability Dashboard 2021–2025</title><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"><style>:root{--bg:#f4f7f5;--surface:#ffffff;--surface2:#eaf0ec;--border:rgba(0,0,0,0.09);--text:#1a2b22;--muted:#5e7568;--green:#34a853;--amber:#d85604;--red:#ea4335;--blue:#00a1ff;--purple:#ffbb00;--ggreen:rgba(52,168,83,0.12);--gamber:rgba(216,86,4,0.12);--gred:rgba(234,67,53,0.12);--gblue:rgba(0,161,255,0.12)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 70% 50% at 5% 0%,rgba(52,168,83,0.06),transparent 60%),radial-gradient(ellipse 50% 40% at 95% 100%,rgba(0,161,255,0.04),transparent 60%);pointer-events:none;z-index:0}body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,0,0,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,0.04) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}.page{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:32px 40px 60px}.sticky-top{position:sticky;top:0;z-index:100;background:var(--bg);padding-top:32px;margin:-32px -40px 0;padding-left:40px;padding-right:40px;padding-bottom:16px;border-bottom:1px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,0.06)}.sticky-top::before{content:'';position:absolute;inset:0;background:var(--bg);z-index:-1}header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--border)}.header-left{display:flex;flex-direction:column;gap:8px}.badge{display:inline-flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);background:var(--ggreen);border:1px solid rgba(52,168,83,.3);padding:5px 12px;border-radius:3px;width:fit-content}.badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.85)}}h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(22px,3vw,36px);letter-spacing:-.02em;line-height:1.1;color:#1a2b22}h1 span{color:var(--green)}.subtitle{font-family:'DM Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:.06em}.header-right{display:flex;flex-direction:column;align-items:flex-end;gap:5px}.org-tag{font-family:'Syne',sans-serif;font-weight:700;font-size:13px;color:var(--amber);letter-spacing:.08em;text-transform:uppercase}.prep-tag{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}.year-bar{display:flex;align-items:center;gap:16px;margin-bottom:24px;flex-wrap:wrap}.year-bar-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.year-tabs{display:flex;gap:3px;background:rgba(0,0,0,0.04);border:1px solid var(--border);border-radius:10px;padding:4px}.year-tab{font-family:'DM Mono',monospace;font-size:12px;padding:8px 20px;border-radius:7px;border:none;background:transparent;color:var(--muted);cursor:pointer;transition:all .18s;position:relative;white-space:nowrap}.year-tab:hover:not(.active){color:var(--text)}.year-tab.active{background:var(--surface2);color:var(--text);border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.1)}.year-tab.base-tab::before{content:'BASE';position:absolute;top:-8px;left:50%;transform:translateX(-50%);font-size:7px;letter-spacing:.1em;color:var(--amber);background:var(--bg);padding:0 3px;border-radius:2px}#yearStatusBadge{font-family:'DM Mono',monospace;font-size:10px;padding:5px 12px;border-radius:3px;letter-spacing:.08em}.section-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:13px;display:flex;align-items:center;gap:10px}.section-label::after{content:'';flex:1;height:1px;background:var(--border)}.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:22px}.kpi-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;position:relative;overflow:hidden;transition:transform .2s}.kpi-card:hover{transform:translateY(-2px)}.kpi-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;border-radius:12px 12px 0 0}.kpi-card.c-amber::before{background:linear-gradient(90deg,var(--amber),transparent)}.kpi-card.c-green::before{background:linear-gradient(90deg,var(--green),transparent)}.kpi-card.c-blue::before{background:linear-gradient(90deg,var(--blue),transparent)}.kpi-card.c-red::before{background:linear-gradient(90deg,var(--red),transparent)}.kpi-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}.kpi-value{font-family:'Syne',sans-serif;font-size:clamp(20px,2.2vw,30px);font-weight:800;letter-spacing:-.02em;line-height:1;margin-bottom:8px}.kpi-unit{font-family:'DM Mono',monospace;font-size:11px;font-weight:400;color:var(--muted);margin-left:3px}.kpi-delta{display:inline-flex;align-items:center;gap:4px;font-family:'DM Mono',monospace;font-size:11px;padding:3px 8px;border-radius:4px}.d-up{background:var(--gred);color:var(--red)}.d-dn{background:var(--ggreen);color:var(--green)}.d-fl{background:var(--gamber);color:var(--amber)}.d-base{background:rgba(0,0,0,0.06);color:var(--muted)}.yoy-section-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:13px;margin-top:6px;display:flex;align-items:center;gap:10px}.yoy-section-label::after{content:'';flex:1;height:1px;background:var(--border)}.yoy-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:22px}.yoy-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;position:relative;overflow:hidden;transition:transform .2s}.yoy-card:hover{transform:translateY(-2px)}.yoy-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;border-radius:12px 12px 0 0}.yoy-card.c-amber::before{background:linear-gradient(90deg,var(--amber),transparent)}.yoy-card.c-green::before{background:linear-gradient(90deg,var(--green),transparent)}.yoy-card.c-blue::before{background:linear-gradient(90deg,var(--blue),transparent)}.yoy-card.c-red::before{background:linear-gradient(90deg,var(--red),transparent)}.yoy-vs{display:flex;align-items:center;gap:8px;margin-bottom:14px}.yoy-vs-year{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.06em}.yoy-vs-arrow{font-size:11px;color:var(--muted)}.yoy-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}.yoy-prev{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted)}.yoy-curr{font-family:'Syne',sans-serif;font-size:clamp(18px,2vw,26px);font-weight:800;letter-spacing:-.02em;line-height:1}.yoy-unit{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-left:2px}.yoy-bar-wrap{height:6px;background:rgba(0,0,0,0.07);border-radius:3px;overflow:hidden;margin-bottom:10px}.yoy-bar{height:100%;border-radius:3px;transition:width .9s cubic-bezier(.4,0,.2,1)}.yoy-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}.env-section{margin-bottom:22px}.env-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:13px}.env-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;position:relative;overflow:hidden;transition:transform .2s}.env-card:hover{transform:translateY(-2px)}.env-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;border-radius:12px 12px 0 0}.env-card.c-teal::before{background:linear-gradient(90deg,#00897b,transparent)}.env-card.c-slate::before{background:linear-gradient(90deg,#546e7a,transparent)}.env-card.c-indigo::before{background:linear-gradient(90deg,#3949ab,transparent)}.env-card.c-cyan::before{background:linear-gradient(90deg,#00acc1,transparent)}.env-card.c-olive::before{background:linear-gradient(90deg,#7cb342,transparent)}.env-card.c-pink::before{background:linear-gradient(90deg,#e91e63,transparent)}.env-card.c-deep::before{background:linear-gradient(90deg,#6a1b9a,transparent)}.env-card.c-orange::before{background:linear-gradient(90deg,#ef6c00,transparent)}.env-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}.env-unit-tag{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);background:rgba(0,0,0,0.05);padding:2px 6px;border-radius:3px;margin-bottom:12px;display:inline-block}.env-value{font-family:'Syne',sans-serif;font-size:clamp(18px,2vw,26px);font-weight:800;letter-spacing:-.02em;line-height:1;margin-bottom:10px}.env-trend{display:flex;flex-direction:column;gap:6px}.env-trend-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.env-trend-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted)}.env-delta{display:inline-flex;align-items:center;gap:4px;font-family:'DM Mono',monospace;font-size:11px;padding:3px 8px;border-radius:4px;font-weight:700}.env-bar-wrap{height:5px;background:rgba(0,0,0,0.07);border-radius:3px;overflow:hidden;flex:1}.env-bar-fill{height:100%;border-radius:3px;transition:width .9s cubic-bezier(.4,0,.2,1)}.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;position:relative;overflow:hidden}.card-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;margin-bottom:3px;color:#1a2b22}.card-sub{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.07em;margin-bottom:20px}.main-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-bottom:16px}.bottom-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px}.wide-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}.elec-path-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:16px;margin-bottom:16px}.bar-chart{display:flex;flex-direction:column;gap:12px}.bar-row{display:flex;flex-direction:column;gap:5px}.bar-meta{display:flex;justify-content:space-between;align-items:baseline}.bar-year-lbl{font-family:'DM Mono',monospace;font-size:11px}.bar-total-lbl{font-family:'Syne',sans-serif;font-size:12px;font-weight:700}.bar-track{height:24px;background:rgba(0,0,0,0.06);border-radius:4px;display:flex;overflow:hidden}.seg-s1{background:var(--green);height:100%;transition:width .8s cubic-bezier(.4,0,.2,1)}.seg-s2{background:var(--blue);height:100%;transition:width .8s cubic-bezier(.4,0,.2,1)}.seg-s3{background:var(--amber);opacity:.9;height:100%;transition:width .8s cubic-bezier(.4,0,.2,1)}.bar-hl{outline:2px solid rgba(216,86,4,0.5);outline-offset:-1px;border-radius:4px}.bar-legend{display:flex;gap:14px;margin-top:10px}.legend-item{display:flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}.legend-dot{width:8px;height:8px;border-radius:2px}.donut-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}.donut-container{position:relative;width:160px;height:160px;overflow:visible}.donut-svg{width:160px;height:160px;transform:rotate(-90deg);overflow:visible}.donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}.donut-cv{font-family:'Syne',sans-serif;font-weight:800;font-size:18px;letter-spacing:-.02em;line-height:1;color:var(--amber)}.donut-cl{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:3px}.donut-list{width:100%;display:flex;flex-direction:column;gap:6px}.donut-item{display:flex;align-items:center;justify-content:space-between;gap:7px}.donut-left{display:flex;align-items:center;gap:7px;flex:1;min-width:0}.donut-bar-bg{flex:1;height:3px;background:rgba(0,0,0,0.07);border-radius:2px;overflow:hidden}.donut-bar-fill{height:100%;border-radius:2px}.donut-name{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:95px}.donut-pct{font-family:'DM Mono',monospace;font-size:11px;color:var(--text);min-width:34px;text-align:right}.sbti-list{display:flex;flex-direction:column;gap:9px}.sbti-row{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:11px 13px;display:flex;align-items:center;justify-content:space-between;gap:10px}.sbti-lbl{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text);min-width:65px}.sbti-bar-bg{flex:1;height:5px;background:rgba(0,0,0,0.07);border-radius:3px;overflow:hidden}.sbti-bar-fill{height:100%;border-radius:3px;transition:width 1s cubic-bezier(.4,0,.2,1)}.sbti-status{font-family:'DM Mono',monospace;font-size:10px;padding:3px 7px;border-radius:4px;min-width:80px;text-align:center}.s-good{background:var(--ggreen);color:var(--green)}.s-warn{background:var(--gamber);color:var(--amber)}.s-crit{background:var(--gred);color:var(--red)}.s-base{background:rgba(0,0,0,0.06);color:var(--muted)}.src-list{display:flex;flex-direction:column;gap:9px}.src-item{display:flex;align-items:center;gap:10px}.src-name{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);min-width:115px}.src-track{flex:1;height:5px;background:rgba(0,0,0,0.07);border-radius:2px;overflow:hidden}.src-fill{height:100%;border-radius:2px;transition:width 1s cubic-bezier(.4,0,.2,1)}.src-val{font-family:'DM Mono',monospace;font-size:10px;min-width:58px;text-align:right}.commute-kpis{display:flex;gap:9px;margin-bottom:13px}.commute-kpi{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px}.commute-kpi-label{font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}.commute-kpi-val{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;letter-spacing:-.02em}.commute-kpi-sub{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}.s3-list{display:flex;flex-direction:column;gap:8px}.s3-row{display:flex;align-items:center;gap:9px}.s3-lbl{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);min-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.s3-track{flex:1;height:7px;background:rgba(0,0,0,0.07);border-radius:4px;overflow:hidden}.s3-fill{height:100%;border-radius:4px;transition:width 1.1s cubic-bezier(.4,0,.2,1)}.s3-val{font-family:'DM Mono',monospace;font-size:10px;color:var(--text);min-width:65px;text-align:right}.bld-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.bld-cell{border-radius:6px;padding:8px 7px;display:flex;flex-direction:column;gap:3px;transition:transform .15s;cursor:default}.bld-cell:hover{transform:scale(1.04)}.bld-name{font-family:'DM Mono',monospace;font-size:9px;color:rgba(0,0,0,0.5);letter-spacing:.05em}.bld-val{font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:#1a2b22}.bld-delta{font-family:'DM Mono',monospace;font-size:9px}.elec-table{width:100%;border-collapse:collapse}.elec-table th{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:6px 10px;text-align:left;border-bottom:1px solid var(--border)}.elec-table td{font-family:'DM Mono',monospace;font-size:11px;padding:9px 10px;border-bottom:1px solid rgba(0,0,0,0.05);color:var(--muted)}.elec-table tr.elec-active td{background:rgba(0,161,255,0.09);color:var(--text)}.pathway-chart{height:175px}.pathway-svg{width:100%;height:100%}.tt{position:fixed;background:#ffffff;border:1px solid rgba(0,0,0,0.15);padding:6px 10px;border-radius:6px;font-family:'DM Mono',monospace;font-size:10px;color:#1a2b22;pointer-events:none;z-index:999;opacity:0;transition:opacity .12s;white-space:pre;box-shadow:0 4px 12px rgba(0,0,0,.1)}.rec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-bottom:16px}@keyframes flashIn{from{opacity:.6}to{opacity:1}}.flash{animation:flashIn .28s ease}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}.fade-in{opacity:0;transform:translateY(10px);animation:fadeUp .45s forwards}.fade-in:nth-child(1){animation-delay:.04s}.fade-in:nth-child(2){animation-delay:.09s}.fade-in:nth-child(3){animation-delay:.14s}.fade-in:nth-child(4){animation-delay:.19s}footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}.footer-left{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}.footer-right{display:flex;gap:16px}.ftag{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);display:flex;align-items:center;gap:6px}.ftag span{width:8px;height:8px;border-radius:2px;display:inline-block}@media(max-width:1100px){.kpi-grid{grid-template-columns:repeat(2,1fr)}.main-grid,.elec-path-grid{grid-template-columns:1fr}.bottom-grid{grid-template-columns:1fr 1fr}.wide-grid{grid-template-columns:1fr}}@media(max-width:680px){.page{padding:16px 14px 36px}.kpi-grid{grid-template-columns:1fr 1fr}.bottom-grid,.rec-grid{grid-template-columns:1fr}.year-tab{padding:7px 12px;font-size:11px}header{flex-direction:column;gap:12px}.header-right{align-items:flex-start}}</style></head><body><div class="tt" id="tt"></div><div class="page"><div class="sticky-top"><header><div class="header-left"><div class="badge">GHG Inventory Report · 4-Year Dataset 2021–2025</div><h1>GHG Emissions <span>Dashboard</span></h1><div class="subtitle"><strong style="color:#39A9DC">AJMAN UNIVERSITY</strong> · CONDUCTED BY AXOSOMATIC · BASELINE YEAR 2021–2022</div></div><div class="header-right"><div class="org-tag">Axosomatic NetZero Carbon Intelligence™</div><div class="prep-tag">Engineered and Powered by Axosomatic · Copyright © www.axosomatic.com</div><div class="prep-tag">Sharjah Research Technology &amp; Innovation Park, UAE</div><div class="prep-tag" style="margin-top:5px;color:var(--amber);">UAE Net Zero 2050 · SDGs 4, 6, 11, 12 &amp; 17</div></div></header><div class="year-bar"><span class="year-bar-label">Select Year:</span><div class="year-tabs" id="yearTabs"><button class="year-tab base-tab" data-y="0">2021–22</button><button class="year-tab" data-y="1">2022–23</button><button class="year-tab" data-y="2">2023–24</button><button class="year-tab active" data-y="3">2024–25</button></div><span id="yearStatusBadge"></span></div><div class="section-label" id="kpiLabel">Key Performance Indicators</div></div><div class="kpi-grid" id="kpiGrid"></div><div class="yoy-section-label" id="yoyLabel">Year-on-Year Comparison</div><div class="yoy-grid" id="yoyGrid"></div><div class="main-grid"><div class="card"><div class="card-title">Year-on-Year Emissions Trend</div><div class="card-sub">ALL SCOPES — tCO₂e · SELECTED YEAR HIGHLIGHTED</div><div class="bar-chart" id="barChart"></div><div class="bar-legend"><div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div>Scope 1</div><div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div>Scope 2</div><div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>Scope 3</div></div></div><div class="card"><div class="card-title">Scope 3 Breakdown</div><div class="card-sub" id="donutSub"></div><div class="donut-wrap"><div class="donut-container"><svg class="donut-svg" viewBox="0 0 100 100" id="donutSvg"></svg><div class="donut-center"><div class="donut-cv" id="donutV"></div><div class="donut-cl" id="donutCatLabel">tCO₂e</div></div></div><div class="donut-list" id="donutList"></div></div></div></div><div class="bottom-grid"><div class="card"><div class="card-title">SBTi Target Status</div><div class="card-sub" id="sbtiSub"></div><div class="sbti-list" id="sbtiList"></div></div><div class="card"><div class="card-title">Scope 1 — Emission Sources</div><div class="card-sub" id="s1Sub"></div><div class="src-list" id="s1Src"></div></div><div class="card"><div class="card-title">Employee &amp; Student Commuting</div><div class="card-sub" id="commSub"></div><div class="commute-kpis" id="commKpis"></div><div class="src-list" id="commChart"></div></div></div><div class="wide-grid"><div class="card"><div class="card-title">Scope 3 Category Detail</div><div class="card-sub" id="s3Sub"></div><div class="s3-list" id="s3List"></div></div><div class="card"><div class="card-title">Scope 2 — Building Emissions</div><div class="card-sub" id="bldSub"></div><div class="bld-grid" id="bldGrid"></div></div></div><div class="elec-path-grid"><div class="card"><div class="card-title">Scope 2 — Electricity Consumption</div><div class="card-sub">ALL YEARS · SELECTED HIGHLIGHTED</div><table class="elec-table"><thead><tr><th>Year</th><th>Electricity (MWh)</th><th>GHG (tCO₂e)</th><th>Δ vs Baseline</th></tr></thead><tbody id="elecBody"></tbody></table></div><div class="card"><div class="card-title">SBTi Net Zero Pathway — Scope 1 + Scope 2</div><div class="card-sub">AU ACTUAL vs. SBTi TARGET · 2021–2030 PROJECTION</div><div class="pathway-chart"><svg class="pathway-svg" id="pathSvg" viewBox="0 0 860 175" preserveAspectRatio="none"></svg></div><div style="display:flex;gap:16px;margin-top:9px;"><div class="legend-item"><svg width="20" height="8"><line x1="0" y1="4" x2="20" y2="4" stroke="#00a1ff" stroke-width="2" stroke-dasharray="5,3"/></svg><span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">SBTi Target</span></div><div class="legend-item"><svg width="20" height="8"><line x1="0" y1="4" x2="20" y2="4" stroke="#d85604" stroke-width="2.5"/></svg><span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)">AU Actual</span></div></div></div></div><div class="section-label" id="envLabel">Water &amp; Waste Resource Metrics</div><div class="env-section"><div class="yoy-section-label" id="waterLabel">Water Consumption — m³</div><div class="env-grid" id="waterGrid"></div><div class="yoy-section-label" id="wasteLabel">Waste Generation — Tonnes</div><div class="env-grid" id="wasteGrid"></div></div><div class="section-label">Axosomatic Recommendations</div><div class="rec-grid" id="recGrid"></div><footer><div class="footer-left">© 2026 Axosomatic · Engineered and Powered by Axosomatic · Confidential — For Axosomatic NetZero Carbon Intelligence™ Use Only · www.axosomatic.com</div><div class="footer-right"><div class="ftag"><span style="background:var(--green)"></span>Scope 1 target met</div><div class="ftag"><span style="background:var(--red)"></span>Scope 2 critical gap</div><div class="ftag"><span style="background:var(--amber)"></span>Scope 3 action needed</div></div></footer></div><script>const _a    = ['2021–22','2022–23','2023–24','2024–25'];
 const _b  = ['2021–2022 (Baseline)','2022–2023','2023–2024','2024–2025'];
 const _c       = [1240.36, 966.60,  1090.20,  981.65];
 const _d       = [12576.45,12586.40,12469.80,12801.41];
@@ -36,70 +36,159 @@ const _r = [12576.00,11916.19,11255.92,10595.66];
 const _s = [9976.14, 10166.62,10357.10,10547.59];
 const _t = [13816,13091,12366,11641,10916,10191,9466,8741,8016,7291];
 const _u = [13816.75,13552.99,13560.01,13783.06];
-let _v = 3;
+const _v    = [60815.34, 23469.70, 24389.45, 21358.25];
+const _w      = [42015.34,  4669.70,  5589.45,  2558.25];
+const _x      = [110.53, 110.53, 110.53, 110.53];
+const _y     = [18800, 18800, 18800, 18800];
+const _z   = [45.4,  204.38, 211.45, 220.00];
+const _A   = [7.9,    11.88,   5.00,   4.00];
+const _B   = [41.1,   12.25,  11.404, 25.58];
+const _C      = [1.88,    8.47,   7.135,  6.92];
+let _D = 3;
 const tt = document.getElementById('tt');
 const showTip=(e,t)=>{tt.textContent=t;tt.style.opacity='1';moveTip(e);};
 const moveTip=e=>{tt.style.left=(e.clientX+14)+'px';tt.style.top=(e.clientY-32)+'px';};
 const hideTip=()=>{tt.style.opacity='0';};
 document.getElementById('yearTabs').addEventListener('click',e=>{
 const b=e.target.closest('.year-tab'); if(!b) return;
-_v=+b.dataset.y;
+_D=+b.dataset.y;
 document.querySelectorAll('.year-tab').forEach(x=>x.classList.remove('active'));
 b.classList.add('active');
-_X();
-_Y();
+_ay();
+_az();
 });
-function _X(){
-const _w=document.getElementById('yearStatusBadge');
-if(_v===0){_w.textContent='BASELINE YEAR';_w.style.cssText='font-family:DM Mono,monospace;font-size:10px;padding:5px 12px;border-radius:3px;letter-spacing:.08em;background:rgba(0,0,0,0.06);color:var(--muted);border:1px solid rgba(0,0,0,0.12);';}
-else if(_v===3){_w.textContent='PERFORMANCE YEAR';_w.style.cssText='font-family:DM Mono,monospace;font-size:10px;padding:5px 12px;border-radius:3px;letter-spacing:.08em;background:rgba(216,86,4,0.12);color:#d85604;border:1px solid rgba(216,86,4,.3);';}
-else{_w.textContent='INTERIM YEAR';_w.style.cssText='font-family:DM Mono,monospace;font-size:10px;padding:5px 12px;border-radius:3px;letter-spacing:.08em;background:rgba(0,161,255,0.12);color:#00a1ff;border:1px solid rgba(0,161,255,.3);';}
+function _ay(){
+const _E=document.getElementById('yearStatusBadge');
+if(_D===0){_E.textContent='BASELINE YEAR';_E.style.cssText='font-family:DM Mono,monospace;font-size:10px;padding:5px 12px;border-radius:3px;letter-spacing:.08em;background:rgba(0,0,0,0.06);color:var(--muted);border:1px solid rgba(0,0,0,0.12);';}
+else if(_D===3){_E.textContent='PERFORMANCE YEAR';_E.style.cssText='font-family:DM Mono,monospace;font-size:10px;padding:5px 12px;border-radius:3px;letter-spacing:.08em;background:rgba(216,86,4,0.12);color:#d85604;border:1px solid rgba(216,86,4,.3);';}
+else{_E.textContent='INTERIM YEAR';_E.style.cssText='font-family:DM Mono,monospace;font-size:10px;padding:5px 12px;border-radius:3px;letter-spacing:.08em;background:rgba(0,161,255,0.12);color:#00a1ff;border:1px solid rgba(0,161,255,.3);';}
 }
-function _Y(){
+function _az(){
 document.querySelectorAll('.card,.kpi-card').forEach(c=>{c.classList.remove('flash');void c.offsetWidth;c.classList.add('flash');});
-const _x=_b[_v].toUpperCase();
-document.getElementById('donutSub').textContent=`BY CATEGORY — ${_x}`;
-document.getElementById('sbtiSub').textContent=`SCIENCE-BASED TARGETS vs. AU ACTUAL — ${_x}`;
-document.getElementById('s1Sub').textContent=`BY SOURCE — ${_x} (tCO₂e)`;
-document.getElementById('commSub').textContent=`SCOPE 3 CAT.7 — ${_x}`;
-document.getElementById('s3Sub').textContent=`EMISSION SOURCES — ${_x} (tCO₂e)`;
-document.getElementById('bldSub').textContent=`${_x} · tCO₂e · COLOR = % FROM BASELINE`;
-_Z();
-_ab();
-_ac();
-_ad();
-_af();
-_ag();
-_ah();
-_ai();
-_aj();
-_ak();
+const _F=_b[_D].toUpperCase();
+document.getElementById('donutSub').textContent=`BY CATEGORY — ${_F}`;
+document.getElementById('sbtiSub').textContent=`SCIENCE-BASED TARGETS vs. AU ACTUAL — ${_F}`;
+document.getElementById('s1Sub').textContent=`BY SOURCE — ${_F} (tCO₂e)`;
+document.getElementById('commSub').textContent=`SCOPE 3 CAT.7 — ${_F}`;
+document.getElementById('s3Sub').textContent=`EMISSION SOURCES — ${_F} (tCO₂e)`;
+document.getElementById('bldSub').textContent=`${_F} · tCO₂e · COLOR = % FROM BASELINE`;
+_aA();
+_aC();
+_aD();
+_aF();
+_aG();
+_aH();
+_aJ();
+_aK();
+_aL();
+_aM();
+_aN();
+_aO();
 }
-function _Z(){
-function _aa(v,b,inv=false){
-if(_v===0) return `<span class="kpi-delta d-base">Baseline Year</span>`;
+function _aA(){
+function _aB(v,b){
+if(_D===0) return `<span class="kpi-delta d-base">Baseline Year</span>`;
 const p=((v-b)/b*100);
-const _y=p>0;
-const _z=inv?(_y?'d-dn':'d-up'):(_y?'d-up':'d-dn');
-return `<span class="kpi-delta ${_z}">${_y?'▲':'▼'} ${Math.abs(p).toFixed(2)}% vs baseline</span>`;
+const _G=p>0;
+const _H=_G?'d-up':'d-dn';
+return `<span class="kpi-delta ${_H}">${_G?'▲':'▼'} ${Math.abs(p).toFixed(2)}% vs baseline</span>`;
 }
 document.getElementById('kpiGrid').innerHTML=`
-<div class="kpi-card c-amber fade-in"><div class="kpi-label">Total GHG Emissions</div><div class="kpi-value" style="color:var(--amber)">${_f[_v].toLocaleString()}<span class="kpi-unit">tCO₂e</span></div>${_aa(_f[_v],_f[0])}</div>
-<div class="kpi-card c-green fade-in"><div class="kpi-label">Scope 1 — Direct</div><div class="kpi-value" style="color:var(--green)">${_c[_v].toLocaleString()}<span class="kpi-unit">tCO₂e</span></div>${_aa(_c[_v],_c[0],true)}</div>
-<div class="kpi-card c-blue fade-in"><div class="kpi-label">Scope 2 — Electricity</div><div class="kpi-value" style="color:var(--blue)">${_d[_v].toLocaleString()}<span class="kpi-unit">tCO₂e</span></div>${_aa(_d[_v],_d[0],true)}</div>
-<div class="kpi-card c-red fade-in"><div class="kpi-label">Scope 3 — Value Chain</div><div class="kpi-value" style="color:var(--red)">${_e[_v].toLocaleString()}<span class="kpi-unit">tCO₂e</span></div>${_aa(_e[_v],_e[0])}</div>`;
+<div class="kpi-card c-amber fade-in"><div class="kpi-label">Total GHG Emissions</div><div class="kpi-value" style="color:var(--amber)">${_f[_D].toLocaleString()}<span class="kpi-unit">tCO₂e</span></div>${_aB(_f[_D],_f[0])}</div>
+<div class="kpi-card c-green fade-in"><div class="kpi-label">Scope 1 — Direct</div><div class="kpi-value" style="color:var(--green)">${_c[_D].toLocaleString()}<span class="kpi-unit">tCO₂e</span></div>${_aB(_c[_D],_c[0])}</div>
+<div class="kpi-card c-blue fade-in"><div class="kpi-label">Scope 2 — Electricity</div><div class="kpi-value" style="color:var(--blue)">${_d[_D].toLocaleString()}<span class="kpi-unit">tCO₂e</span></div>${_aB(_d[_D],_d[0])}</div>
+<div class="kpi-card c-red fade-in"><div class="kpi-label">Scope 3 — Value Chain</div><div class="kpi-value" style="color:var(--red)">${_e[_D].toLocaleString()}<span class="kpi-unit">tCO₂e</span></div>${_aB(_e[_D],_e[0])}</div>`;
 }
-function _ab(){
-const _A=Math.max(..._f);
+function _aC(){
+const _I = document.getElementById('yoyLabel');
+const _J = document.getElementById('yoyGrid');
+if(_D===0){ _I.style.display='none'; _J.style.display='none'; return; }
+const _K = _D-1;
+_I.textContent='Year-on-Year Comparison — '+_a[_K]+' vs '+_a[_D];
+_I.style.display='flex';
+_J.style.display='grid';
+const _L=[
+{label:'Total GHG Emissions', _R:_f[_D], prevV:_f[_K], color:'var(--amber)', _H:'c-amber', unit:'tCO₂e'},
+{label:'Scope 1 — Direct',    _R:_c[_D],    prevV:_c[_K],    color:'var(--green)', _H:'c-green', unit:'tCO₂e'},
+{label:'Scope 2 — Electricity',_R:_d[_D],   prevV:_d[_K],   color:'var(--blue)',  _H:'c-blue',  unit:'tCO₂e'},
+{label:'Scope 3 — Value Chain',_R:_e[_D],   prevV:_e[_K],   color:'var(--red)',   _H:'c-red',   unit:'tCO₂e'},
+];
+_J.innerHTML=_L.map(cfg=>{
+const _M=((cfg._R-cfg.prevV)/cfg.prevV*100);
+const _N=_M>0;
+const _O=_N?'var(--red)':'var(--green)';
+const _P=_N?'var(--gred)':'var(--ggreen)';
+const _Q=_N?'▲':'▼';
+return `<div class="yoy-card ${cfg._H}">
+<div class="yoy-label">${cfg.label}</div>
+<div class="yoy-vs">
+<span class="yoy-vs-year">${_a[_K]}</span>
+<span class="yoy-vs-arrow">→</span>
+<span class="yoy-vs-year" style="color:var(--text);font-weight:600">${_a[_D]}</span>
+</div>
+<div style="margin-bottom:10px;">
+<div style="font-family:'Syne',sans-serif;font-size:clamp(20px,2.2vw,30px);font-weight:800;letter-spacing:-.02em;color:${cfg.color};line-height:1;">${cfg._R.toLocaleString()}<span style="font-family:'DM Mono',monospace;font-size:11px;font-weight:400;color:var(--muted);margin-left:3px;">${cfg.unit}</span></div>
+</div>
+<span style="display:inline-flex;align-items:center;gap:5px;font-family:'DM Mono',monospace;font-size:13px;padding:5px 12px;border-radius:6px;background:${_P};color:${_O};font-weight:700">${_Q} ${Math.abs(_M).toFixed(2)}% vs ${_a[_K]}</span>
+</div>`;
+}).join('');
+}
+function _aD(){
+function _aE(label, data, color, _H, unit, maxAll){
+const _R = data[_D];
+const _S = data[0];
+const _T = ((_R - _S) / _S * 100);
+const _U = _T > 0;
+const _V = _U ? 'var(--red)' : 'var(--green)';
+const _W    = _U ? 'var(--gred)' : 'var(--ggreen)';
+const _X   = (_R / maxAll * 100).toFixed(1);
+let _Y = '';
+if(_D > 0){
+const _M = ((_R - data[_D-1]) / data[_D-1] * 100);
+const _N  = _M > 0;
+_Y = `<div class="env-trend-row">
+<span class="env-trend-label">vs ${_a[_D-1]}</span>
+<span class="env-delta" style="background:${_N?'var(--gred)':'var(--ggreen)'};color:${_N?'var(--red)':'var(--green)'}">${_N?'▲':'▼'} ${Math.abs(_M).toFixed(1)}% YoY</span>
+</div>`;
+}
+return `<div class="env-card ${_H}">
+<div class="env-label">${label}</div>
+<div class="env-unit-tag">${unit}</div>
+<div class="env-value" style="color:${color}">${_R.toLocaleString(undefined,{maximumFractionDigits:2})}</div>
+<div class="env-bar-wrap" style="margin-bottom:10px;"><div class="env-bar-fill" style="width:${_X}%;background:${color};opacity:0.7;"></div></div>
+<div class="env-trend">
+<div class="env-trend-row">
+<span class="env-trend-label">vs 2021–22 baseline</span>
+<span class="env-delta" style="background:${_W};color:${_V}">${_U?'▲':'▼'} ${Math.abs(_T).toFixed(1)}%</span>
+</div>
+${_Y}
+</div>
+</div>`;
+}
+const _Z = Math.max(...[_v,_w,_x,_y].map(d=>Math.max(...d)));
+document.getElementById('waterGrid').innerHTML =
+_aE('Water Supply',       _v, '#00897b', 'c-teal',   'm³', _Z) +
+_aE('Wastewater',         _w,   '#546e7a', 'c-slate',  'm³', _Z) +
+_aE('Muni. Treated Water',_x,   '#3949ab', 'c-indigo', 'm³', _Z) +
+_aE('On-Site Greywater Treatment',  _y,  '#00acc1', 'c-cyan',   'm³', _Z);
+const _aa = Math.max(...[_z,_A,_B,_C].map(d=>Math.max(...d)));
+document.getElementById('wasteGrid').innerHTML =
+_aE('General Waste', _z, '#7cb342', 'c-olive',  'tonnes', _aa) +
+_aE('Plastic Waste', _A, '#e91e63', 'c-pink',   'tonnes', _aa) +
+_aE('Medical Waste', _B, '#6a1b9a', 'c-deep',   'tonnes', _aa) +
+_aE('Food Waste',    _C,    '#ef6c00', 'c-orange', 'tonnes', _aa);
+}
+function _aF(){
+const _ab=Math.max(..._f);
 document.getElementById('barChart').innerHTML=_a.map((yr,i)=>{
 const t=_f[i],s1w=(_c[i]/t*100).toFixed(1),s2w=(_d[i]/t*100).toFixed(1),s3w=(_e[i]/t*100).toFixed(1);
-const _B=(t/_A*100).toFixed(1),_U=i===_v,op=Math.abs(i-_v)<2?1:0.38;
+const _ac=(t/_ab*100).toFixed(1),_av=i===_D,op=Math.abs(i-_D)<2?1:0.38;
 return `<div class="bar-row">
 <div class="bar-meta">
-<span class="bar-year-lbl" style="color:${_U?'var(--amber)':'var(--muted)'};font-weight:${_U?700:400}">${yr}${i===0?' (base)':''}</span>
-<span class="bar-total-lbl" style="color:${_U?'var(--amber)':'var(--text)'}">${t.toLocaleString()}</span>
+<span class="bar-year-lbl" style="color:${_av?'var(--amber)':'var(--muted)'};font-weight:${_av?700:400}">${yr}${i===0?' (base)':''}</span>
+<span class="bar-total-lbl" style="color:${_av?'var(--amber)':'var(--text)'}">${t.toLocaleString()}</span>
 </div>
-<div class="bar-track ${_U?'bar-hl':''}" style="max-width:${_B}%;opacity:${op};transition:opacity .3s;">
+<div class="bar-track ${_av?'bar-hl':''}" style="max-width:${_ac}%;opacity:${op};transition:opacity .3s;">
 <div class="seg-s1" style="width:${s1w}%" onmouseenter="showTip(event,'Scope 1: ${_c[i].toFixed(1)} tCO₂e')" onmousemove="moveTip(event)" onmouseleave="hideTip()"></div>
 <div class="seg-s2" style="width:${s2w}%" onmouseenter="showTip(event,'Scope 2: ${_d[i].toFixed(1)} tCO₂e')" onmousemove="moveTip(event)" onmouseleave="hideTip()"></div>
 <div class="seg-s3" style="width:${s3w}%" onmouseenter="showTip(event,'Scope 3: ${_e[i].toFixed(1)} tCO₂e')" onmousemove="moveTip(event)" onmouseleave="hideTip()"></div>
@@ -107,34 +196,34 @@ return `<div class="bar-row">
 </div>`;
 }).join('');
 }
-function _ac(){
-const _C=_k[_v],tot=_C.reduce((a,b)=>a+b,0);
+function _aG(){
+const _ad=_k[_D],tot=_ad.reduce((a,b)=>a+b,0);
 document.getElementById('donutV').textContent=tot.toLocaleString(undefined,{maximumFractionDigits:0});
 document.getElementById('donutCatLabel').textContent='tCO₂e';
-const _D=document.getElementById('donutSvg');
-let _E='',cum=0;
-_C.forEach((v,i)=>{
+const _ae=document.getElementById('donutSvg');
+let _af='',cum=0;
+_ad.forEach((v,i)=>{
 const p=v/tot,sl=p*360;
-const _F=cum*Math.PI/180,ea=(cum+sl)*Math.PI/180;
-const _G=50+38*Math.cos(_F),y1=50+38*Math.sin(_F),x2=50+38*Math.cos(ea),y2=50+38*Math.sin(ea);
-const _H=50+26*Math.cos(_F),iy1=50+26*Math.sin(_F),ix2=50+26*Math.cos(ea),iy2=50+26*Math.sin(ea);
-const _I=sl>180?1:0;
-_E+=`<path data-idx="${i}" data-val="${v}" data-pct="${(p*100).toFixed(1)}" d="M${_H},${iy1} L${_G},${y1} A38,38 0 ${_I} 1 ${x2},${y2} L${ix2},${iy2} A26,26 0 ${_I} 0 ${_H},${iy1}" fill="${_m[i]}" opacity="0.85" stroke="var(--bg)" stroke-width="1" style="cursor:pointer;transition:opacity .15s,transform .15s;transform-origin:50px 50px;"/>`;
+const _ag=cum*Math.PI/180,ea=(cum+sl)*Math.PI/180;
+const _ah=50+38*Math.cos(_ag),y1=50+38*Math.sin(_ag),x2=50+38*Math.cos(ea),y2=50+38*Math.sin(ea);
+const _ai=50+26*Math.cos(_ag),iy1=50+26*Math.sin(_ag),ix2=50+26*Math.cos(ea),iy2=50+26*Math.sin(ea);
+const _aj=sl>180?1:0;
+_af+=`<path data-idx="${i}" data-val="${v}" data-pct="${(p*100).toFixed(1)}" d="M${_ai},${iy1} L${_ah},${y1} A38,38 0 ${_aj} 1 ${x2},${y2} L${ix2},${iy2} A26,26 0 ${_aj} 0 ${_ai},${iy1}" fill="${_m[i]}" opacity="0.85" stroke="var(--bg)" stroke-width="1" style="cursor:pointer;transition:opacity .15s,transform .15s;transform-origin:50px 50px;"/>`;
 cum+=sl;
 });
-_D.innerHTML=_E;
-_D.querySelectorAll('path').forEach(path=>{
+_ae.innerHTML=_af;
+_ae.querySelectorAll('path').forEach(path=>{
 const idx=+path.dataset.idx;
 const val=+path.dataset.val;
 const pct=path.dataset.pct;
 const name=_l[idx];
-const _J=val.toLocaleString(undefined,{maximumFractionDigits:1});
+const _ak=val.toLocaleString(undefined,{maximumFractionDigits:1});
 path.addEventListener('mouseenter',e=>{
 path.style.opacity='1';
 path.style.transform='scale(1.07)';
-document.getElementById('donutV').textContent=_J;
+document.getElementById('donutV').textContent=_ak;
 document.getElementById('donutCatLabel').textContent=name+' · '+pct+'%';
-showTip(e,name+'\n'+_J+' tCO₂e  ·  '+pct+'%');
+showTip(e,name+'\n'+_ak+' tCO₂e  ·  '+pct+'%');
 });
 path.addEventListener('mousemove',e=>moveTip(e));
 path.addEventListener('mouseleave',()=>{
@@ -145,8 +234,8 @@ document.getElementById('donutCatLabel').textContent='tCO₂e';
 hideTip();
 });
 });
-const _K=_C.map((v,i)=>({v,i,p:v/tot*100})).sort((a,b)=>b.v-a.v);
-document.getElementById('donutList').innerHTML=_K.map(d=>`
+const _al=_ad.map((v,i)=>({v,i,p:v/tot*100})).sort((a,b)=>b.v-a.v);
+document.getElementById('donutList').innerHTML=_al.map(d=>`
 <div class="donut-item">
 <div class="donut-left">
 <div style="width:8px;height:8px;border-radius:2px;background:${_m[d.i]};flex-shrink:0"></div>
@@ -156,26 +245,26 @@ document.getElementById('donutList').innerHTML=_K.map(d=>`
 <span class="donut-pct">${d.p.toFixed(1)}%</span>
 </div>`).join('');
 }
-function _ad(){
-function _ae(label,target,actual){
-const p=_v===0?0:((actual-target)/target*100);
-let _z,txt;
-if(_v===0){_z='s-base';txt='BASELINE';}
-else if(p<=-0.01){_z='s-good';txt=`✓ ${Math.abs(p).toFixed(1)}% UNDER`;}
-else if(p<15){_z='s-warn';txt=`! +${p.toFixed(1)}% GAP`;}
-else{_z='s-crit';txt=`⚠ +${p.toFixed(1)}% GAP`;}
-const _L=Math.min(actual/(target*1.55)*100,100);
-const _M=p<0?'var(--green)':p<15?'var(--amber)':'var(--red)';
-return `<div class="sbti-row"><span class="sbti-lbl">${label}</span><div class="sbti-bar-bg"><div class="sbti-bar-fill" style="width:${_L}%;background:${_M};"></div></div><span class="sbti-status ${_z}">${txt}</span></div>`;
+function _aH(){
+function _aI(label,target,actual){
+const p=_D===0?0:((actual-target)/target*100);
+let _H,txt;
+if(_D===0){_H='s-base';txt='BASELINE';}
+else if(p<=-0.01){_H='s-good';txt=`✓ ${Math.abs(p).toFixed(1)}% UNDER`;}
+else if(p<15){_H='s-warn';txt=`! +${p.toFixed(1)}% GAP`;}
+else{_H='s-crit';txt=`⚠ +${p.toFixed(1)}% GAP`;}
+const _am=Math.min(actual/(target*1.55)*100,100);
+const _an=p<0?'var(--green)':p<15?'var(--amber)':'var(--red)';
+return `<div class="sbti-row"><span class="sbti-lbl">${label}</span><div class="sbti-bar-bg"><div class="sbti-bar-fill" style="width:${_am}%;background:${_an};"></div></div><span class="sbti-status ${_H}">${txt}</span></div>`;
 }
 document.getElementById('sbtiList').innerHTML=
-_ae('Scope 1',_q[_v],_c[_v])+_ae('Scope 2',_r[_v],_d[_v])+
-_ae('Scope 3',_s[_v],_e[_v])+_ae('S1+S2',_q[_v]+_r[_v],_c[_v]+_d[_v]);
+_aI('Scope 1',_q[_D],_c[_D])+_aI('Scope 2',_r[_D],_d[_D])+
+_aI('Scope 3',_s[_D],_e[_D])+_aI('S1+S2',_q[_D]+_r[_D],_c[_D]+_d[_D]);
 }
-function _af(){
-const _N=_i[_v],_A=Math.max(..._N);
+function _aJ(){
+const _ao=_i[_D],_ab=Math.max(..._ao);
 document.getElementById('s1Src').innerHTML=_j.map((n,i)=>{
-const v=_N[i],w=_A>0?(v/_A*100).toFixed(0):0;
+const v=_ao[i],w=_ab>0?(v/_ab*100).toFixed(0):0;
 return `<div class="src-item">
 <span class="src-name">${n}</span>
 <div class="src-track"><div class="src-fill" style="width:${w}%;background:var(--green);opacity:${v>0?1:0.25};"></div></div>
@@ -183,95 +272,95 @@ return `<div class="src-item">
 </div>`;
 }).join('');
 }
-function _ag(){
-const [e,s]=_n[_v],tot=e+s;
+function _aK(){
+const [e,s]=_n[_D],tot=e+s;
 document.getElementById('commKpis').innerHTML=`
 <div class="commute-kpi"><div class="commute-kpi-label">Employees</div><div class="commute-kpi-val" style="color:var(--blue)">${e.toFixed(1)}</div><div class="commute-kpi-sub">${(e/tot*100).toFixed(1)}% of total</div></div>
 <div class="commute-kpi"><div class="commute-kpi-label">Students</div><div class="commute-kpi-val" style="color:var(--amber)">${s.toFixed(1)}</div><div class="commute-kpi-sub">${(s/tot*100).toFixed(1)}% of total</div></div>`;
-const _A=Math.max(..._n.map(c=>c[0]+c[1]));
+const _ab=Math.max(..._n.map(c=>c[0]+c[1]));
 document.getElementById('commChart').innerHTML=_n.map(([emp,stu],i)=>{
-const t=emp+stu,ew=(emp/_A*100).toFixed(1),_B=(stu/_A*100).toFixed(1),_U=i===_v;
-return `<div class="src-item" style="flex-direction:column;gap:4px;align-items:stretch;opacity:${_U?1:0.42};transition:opacity .3s;">
+const t=emp+stu,ew=(emp/_ab*100).toFixed(1),_ac=(stu/_ab*100).toFixed(1),_av=i===_D;
+return `<div class="src-item" style="flex-direction:column;gap:4px;align-items:stretch;opacity:${_av?1:0.42};transition:opacity .3s;">
 <div style="display:flex;justify-content:space-between;">
-<span style="font-family:'DM Mono',monospace;font-size:10px;color:${_U?'var(--amber)':'var(--muted)'};font-weight:${_U?700:400}">${_a[i]}${i===0?' (base)':''}</span>
-<span style="font-family:'DM Mono',monospace;font-size:10px;color:${_U?'var(--text)':'var(--muted)'};">${t.toFixed(0)} tCO₂e</span>
+<span style="font-family:'DM Mono',monospace;font-size:10px;color:${_av?'var(--amber)':'var(--muted)'};font-weight:${_av?700:400}">${_a[i]}${i===0?' (base)':''}</span>
+<span style="font-family:'DM Mono',monospace;font-size:10px;color:${_av?'var(--text)':'var(--muted)'};">${t.toFixed(0)} tCO₂e</span>
 </div>
-<div style="height:8px;background:rgba(0,0,0,0.06);border-radius:4px;overflow:hidden;display:flex;${_U?'outline:1px solid rgba(216,86,4,.4);':''}"">
+<div style="height:8px;background:rgba(0,0,0,0.06);border-radius:4px;overflow:hidden;display:flex;${_av?'outline:1px solid rgba(216,86,4,.4);':''}"">
 <div style="width:${ew}%;background:var(--blue);height:100%;"></div>
-<div style="width:${_B}%;background:var(--amber);height:100%;opacity:.8;"></div>
+<div style="width:${_ac}%;background:var(--amber);height:100%;opacity:.8;"></div>
 </div>
 </div>`;
 }).join('');
 }
-function _ah(){
-const _C=_k[_v],_A=Math.max(..._C);
-const _K=_C.map((v,i)=>({v,i})).sort((a,b)=>b.v-a.v);
-document.getElementById('s3List').innerHTML=_K.map(d=>`
+function _aL(){
+const _ad=_k[_D],_ab=Math.max(..._ad);
+const _al=_ad.map((v,i)=>({v,i})).sort((a,b)=>b.v-a.v);
+document.getElementById('s3List').innerHTML=_al.map(d=>`
 <div class="s3-row">
 <span class="s3-lbl">${_l[d.i]}</span>
-<div class="s3-track"><div class="s3-fill" style="width:${(d.v/_A*100).toFixed(0)}%;background:linear-gradient(90deg,${_m[d.i]},${_m[d.i]}55);"></div></div>
+<div class="s3-track"><div class="s3-fill" style="width:${(d.v/_ab*100).toFixed(0)}%;background:linear-gradient(90deg,${_m[d.i]},${_m[d.i]}55);"></div></div>
 <span class="s3-val">${d.v.toLocaleString(undefined,{maximumFractionDigits:1})}</span>
 </div>`).join('');
 }
-function _ai(){
-const _N=_p[_v],base=_p[0];
+function _aM(){
+const _ao=_p[_D],base=_p[0];
 document.getElementById('bldGrid').innerHTML=_o.map((n,i)=>{
-const v=_N[i],d=((v-base[i])/base[i]*100);
-const _O=Math.min(Math.abs(d)/30,1);
-const _P=d>10?`rgba(234,67,53,${.1+_O*.3})`:d>0?`rgba(255,187,0,${.1+_O*.2})`:`rgba(52,168,83,${.1+_O*.25})`;
-const _Q=d>0?'var(--red)':'var(--green)';
-return `<div class="bld-cell" style="background:${_P};border:1px solid rgba(0,0,0,0.1);"
+const v=_ao[i],d=((v-base[i])/base[i]*100);
+const _ap=Math.min(Math.abs(d)/30,1);
+const _aq=d>10?`rgba(234,67,53,${.1+_ap*.3})`:d>0?`rgba(255,187,0,${.1+_ap*.2})`:`rgba(52,168,83,${.1+_ap*.25})`;
+const _ar=d>0?'var(--red)':'var(--green)';
+return `<div class="bld-cell" style="background:${_aq};border:1px solid rgba(0,0,0,0.1);"
 onmouseenter="showTip(event,'${n}\\n${v.toFixed(0)} tCO₂e\\n${d>0?'+':''}${d.toFixed(1)}% vs baseline')"
 onmousemove="moveTip(event)" onmouseleave="hideTip()">
 <span class="bld-name">${n}</span>
 <span class="bld-val">${v.toFixed(0)}</span>
-<span class="bld-delta" style="color:${_Q}">${d>0?'+':''}${d.toFixed(1)}%</span>
+<span class="bld-delta" style="color:${_ar}">${d>0?'+':''}${d.toFixed(1)}%</span>
 </div>`;
 }).join('');
 }
-function _aj(){
+function _aN(){
 document.getElementById('elecBody').innerHTML=_a.map((yr,i)=>{
 const d=i===0?'—':((_g[i]-_g[0])/_g[0]*100).toFixed(2)+'%';
-const _R=i>0&&_g[i]>_g[0];
-return `<tr class="${i===_v?'elec-active':''}">
+const _as=i>0&&_g[i]>_g[0];
+return `<tr class="${i===_D?'elec-active':''}">
 <td>${yr}${i===0?' ★':''}</td>
 <td>${_g[i].toLocaleString()}</td>
 <td>${_h[i].toLocaleString()}</td>
-<td style="color:${i===0?'var(--muted)':_R?'var(--red)':'var(--green)'}">${d}</td>
+<td style="color:${i===0?'var(--muted)':_as?'var(--red)':'var(--green)'}">${d}</td>
 </tr>`;
 }).join('');
 }
-function _ak(){
-const _S=document.getElementById('pathSvg');
+function _aO(){
+const _at=document.getElementById('pathSvg');
 const W=860,H=175,pad=38,minY=6000,maxY=15500;
 const n=_t.length,xs=(W-pad*2)/(n-1);
-const _T=v=>H-pad-((v-minY)/(maxY-minY))*(H-pad*2);
+const _au=v=>H-pad-((v-minY)/(maxY-minY))*(H-pad*2);
 let h='';
 for(let v=7000;v<=15000;v+=2000){
-const y=_T(v);
+const y=_au(v);
 h+=`<line x1="${pad}" y1="${y}" x2="${W-pad}" y2="${y}" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>`;
 h+=`<text x="${pad-4}" y="${y+4}" fill="rgba(0,0,0,0.4)" font-size="9.5" font-family="DM Mono,monospace" text-anchor="end">${(v/1000).toFixed(0)}k</text>`;
 }
 ['2022','2023','2024','2025','2026','2027','2028','2029','2030'].forEach((yr,i)=>{
-const _U=i===_v;
-h+=`<text x="${pad+i*xs}" y="${H-4}" fill="${_U?'rgba(216,86,4,1)':'rgba(0,0,0,0.4)'}" font-size="9.5" font-family="DM Mono,monospace" text-anchor="middle" font-weight="${_U?700:400}">${yr}</text>`;
-if(_U&&i<_u.length) h+=`<line x1="${pad+i*xs}" y1="${pad}" x2="${pad+i*xs}" y2="${H-pad}" stroke="rgba(216,86,4,0.3)" stroke-width="1" stroke-dasharray="3,3"/>`;
+const _av=i===_D;
+h+=`<text x="${pad+i*xs}" y="${H-4}" fill="${_av?'rgba(216,86,4,1)':'rgba(0,0,0,0.4)'}" font-size="9.5" font-family="DM Mono,monospace" text-anchor="middle" font-weight="${_av?700:400}">${yr}</text>`;
+if(_av&&i<_u.length) h+=`<line x1="${pad+i*xs}" y1="${pad}" x2="${pad+i*xs}" y2="${H-pad}" stroke="rgba(216,86,4,0.3)" stroke-width="1" stroke-dasharray="3,3"/>`;
 });
-let _V=`M${pad},${_T(_t[0])}`;
-_t.slice(0,4).forEach((v,i)=>{if(i>0)_V+=` L${pad+i*xs},${_T(v)}`;});
-_V+=` L${pad+3*xs},${_T(_u[3])}`;
-[..._u].reverse().forEach((v,i)=>{_V+=` L${pad+(3-i)*xs},${_T(v)}`;});
-h+=`<path d="${_V}" fill="rgba(234,67,53,0.08)" stroke="none"/>`;
-h+=`<path d="${_t.map((v,i)=>`${i?'L':'M'}${pad+i*xs},${_T(v)}`).join(' ')}" fill="none" stroke="#00a1ff" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.7"/>`;
-h+=`<path d="${_u.map((v,i)=>`${i?'L':'M'}${pad+i*xs},${_T(v)}`).join(' ')}" fill="none" stroke="#d85604" stroke-width="2.5" opacity="0.9"/>`;
+let _aw=`M${pad},${_au(_t[0])}`;
+_t.slice(0,4).forEach((v,i)=>{if(i>0)_aw+=` L${pad+i*xs},${_au(v)}`;});
+_aw+=` L${pad+3*xs},${_au(_u[3])}`;
+[..._u].reverse().forEach((v,i)=>{_aw+=` L${pad+(3-i)*xs},${_au(v)}`;});
+h+=`<path d="${_aw}" fill="rgba(234,67,53,0.08)" stroke="none"/>`;
+h+=`<path d="${_t.map((v,i)=>`${i?'L':'M'}${pad+i*xs},${_au(v)}`).join(' ')}" fill="none" stroke="#00a1ff" stroke-width="1.8" stroke-dasharray="6,4" opacity="0.7"/>`;
+h+=`<path d="${_u.map((v,i)=>`${i?'L':'M'}${pad+i*xs},${_au(v)}`).join(' ')}" fill="none" stroke="#d85604" stroke-width="2.5" opacity="0.9"/>`;
 _u.forEach((v,i)=>{
-const _U=i===_v;
-h+=`<circle cx="${pad+i*xs}" cy="${_T(v)}" r="${_U?6:3.5}" fill="${_U?'#ffffff':'#d85604'}" stroke="${_U?'#d85604':'var(--_P)'}" stroke-width="2"/>`;
+const _av=i===_D;
+h+=`<circle cx="${pad+i*xs}" cy="${_au(v)}" r="${_av?6:3.5}" fill="${_av?'#ffffff':'#d85604'}" stroke="${_av?'#d85604':'var(--_aq)'}" stroke-width="2"/>`;
 });
-_S.innerHTML=h;
+_at.innerHTML=h;
 }
-function _al(){
-const _W=[
+function _aP(){
+const _ax=[
 {icon:'⚡',title:'Electrify Fleet',scope:'Scope 1 · Mobile',txt:'Replace diesel/petrol vehicles with EVs or hybrids. Diesel buses alone = 258 tCO₂e (+131.74% vs baseline). Buses = 87% of all mobile combustion.',col:'var(--green)'},
 {icon:'☀️',title:'Renewable Energy',scope:'Scope 2',txt:'Adopt solar PV or green grid tariffs. Scope 2 is 20.81% above SBTi target. S. HUB (+25%) and 4086 J1 (+18%) are the highest-growth buildings.',col:'var(--blue)'},
 {icon:'🛒',title:'Green Procurement',scope:'Scope 3 Cat. 2',txt:'Embed carbon criteria in capital goods purchasing. IT & medical equipment = 57.67% of Scope 3 (13,447 tCO₂e) — the single largest emissions driver.',col:'var(--amber)'},
@@ -279,7 +368,7 @@ const _W=[
 {icon:'❄️',title:'Refrigerant Metering',scope:'Scope 1 · Stationary',txt:'Measure actual refrigerant top-up rather than estimated leakage rates. 48.44% reduction shows strong progress; real measurements improve accuracy.',col:'var(--blue)'},
 {icon:'☁️',title:'Carbon-Aware Cloud',scope:'Scope 3 Cat. 1',txt:'Negotiate carbon-aware cloud SLAs. Cloud services = 79.97% of Cat. 1 (1,876 tCO₂e). Green cloud regions can substantially reduce this footprint.',col:'var(--green)'},
 ];
-document.getElementById('recGrid').innerHTML=_W.map(r=>`
+document.getElementById('recGrid').innerHTML=_ax.map(r=>`
 <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;position:relative;overflow:hidden;transition:transform .15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
 <div style="position:absolute;top:0;right:0;width:55px;height:55px;background:radial-gradient(circle at top right,${r.col}18,transparent);border-radius:0 12px 0 0;"></div>
 <div style="font-size:20px;margin-bottom:9px;">${r.icon}</div>
@@ -288,6 +377,6 @@ document.getElementById('recGrid').innerHTML=_W.map(r=>`
 <div style="font-family:'DM Sans',sans-serif;font-size:11px;color:var(--muted);line-height:1.55;">${r.txt}</div>
 </div>`).join('');
 }
-_X();
-_Y();
-_al();</script></body></html>
+_ay();
+_az();
+_aP();</script></body></html>
